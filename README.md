@@ -82,6 +82,46 @@ Analog/mixed-signal IPs
 
 They help designers avoid designing every low-level circuit from scratch and ensure compatibility with the chosen fabrication technology.
 
+# Introduction to RISC-V 
+
+<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/abe7aa6f-0d1d-4374-bfa8-1c8eb262e70d" />
+
+
+An Instruction Set Architecture is an abstract interface between software and processor hardware. It defines the instructions, registers, memory-access behavior and programmer-visible rules of the processor.
+The ISA allows software to be developed against a defined instruction interface while different hardware implementations can realize that same ISA.
+
+RISC-V
+
+RISC-V is an open standard ISA based on reduced-instruction-set principles. It can be implemented in many different processor designs and is widely used for education, research and hardware development.
+
+PicoRV32
+
+PicoRV32 is a compact RISC-V CPU core. In this learning flow, the conceptual path is RISC-V ISA → CPU implementation → RTL → synthesis → physical design.
+
+
+# From Software Application to Hardware  
+
+<img width="1920" height="1080" alt="Screenshot (79)" src="https://github.com/user-attachments/assets/e42fa3f5-0e57-4b33-bb35-e09a34864a24" />
+
+<img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/9540b881-7290-43ee-95c4-b4f7a81b02c2" />
+
+Layer	              :                                           Role
+
+Application software	:                          Programs used by the user, such as a browser or stopwatch application.
+
+Operating system / system software	 :          Manages I/O, memory and other hardware resources and provides services to applications.
+
+Compiler	:                                     Translates high-level source code such as C into lower-level instructions.
+
+Assembler	   :                                  Converts assembly instructions into machine-code representation.
+
+ISA	   :                                        Defines the instructions and programmer-visible interface of a processor.
+
+RTL	   :                                        Describes digital hardware behavior and data movement using HDL such as Verilog.
+
+Synthesis   :                                  	Converts RTL into a gate-level representation for a target technology.
+
+Physical design	  :                             Places and routes the design and prepares the physical layout.
 
 
 
