@@ -10,25 +10,25 @@ A System-on-Chip integrates multiple functional blocks onto one chip. Typical bl
 
 <img width="1920" height="1080" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/b1cd64ab-4089-4882-8219-5fabd3a0ac26" />
 
-Introduction to QFN-48 Package:
+* Introduction to QFN-48 Package:
 
-QFN-48 (Quad Flat No-Lead 48) is a semiconductor IC package that has 48 electrical connections (pads) around the bottom edges of the package. Unlike traditional packages, QFN has no external leads/pins, making it compact and suitable for modern SoC and VLSI designs.
+  - QFN-48 (Quad Flat No-Lead 48) is a semiconductor IC package that has 48 electrical connections (pads) around the bottom edges of the package. Unlike traditional packages, QFN has no external leads/pins, making it compact and suitable for modern SoC and VLSI designs.
 
 Important Terms:
 
-Package: The outer physical structure that protects the semiconductor die and provides electrical connections between the chip and the PCB.
+  - Package: The outer physical structure that protects the semiconductor die and provides electrical connections between the chip and the PCB.
 
-QFN-48: A package with 48 pads, arranged around four sides, plus a central exposed pad in many QFN designs for thermal and/or electrical purposes.
+  - QFN-48: A package with 48 pads, arranged around four sides, plus a central exposed pad in many QFN designs for thermal and/or electrical purposes.
 
 <img width="1920" height="1080" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/7738bf3b-8038-4bd3-be34-85cb18fe848e" />
 
 Components of chip:
 
-Pad: A metal contact area used to connect the IC to the outside world, typically through PCB soldering. Pads can carry power, ground, input/output signals, etc.
+* Pad: A metal contact area used to connect the IC to the outside world, typically through PCB soldering. Pads can carry power, ground, input/output signals, etc.
 
-Die: The actual piece of semiconductor material (usually silicon) containing the fabricated electronic circuits, such as CPU, memory, and other SoC blocks.
+* Die: The actual piece of semiconductor material (usually silicon) containing the fabricated electronic circuits, such as CPU, memory, and other SoC blocks.
 
-Core: The main functional region of the die where the logic circuitry is placed. In physical design, the core area generally contains standard cells and other internal circuit elements, while the surrounding area contains I/O-related structures.
+* Core: The main functional region of the die where the logic circuitry is placed. In physical design, the core area generally contains standard cells and other internal circuit elements, while the surrounding area contains I/O-related structures.
 
 <img width="1920" height="1080" alt="Screenshot (76)" src="https://github.com/user-attachments/assets/d1518a45-9c6a-4ae5-bb2e-48262c7ca4c4" />
 
@@ -90,11 +90,11 @@ They help designers avoid designing every low-level circuit from scratch and ens
 An Instruction Set Architecture is an abstract interface between software and processor hardware. It defines the instructions, registers, memory-access behavior and programmer-visible rules of the processor.
 The ISA allows software to be developed against a defined instruction interface while different hardware implementations can realize that same ISA.
 
-RISC-V
+* RISC-V
 
 RISC-V is an open standard ISA based on reduced-instruction-set principles. It can be implemented in many different processor designs and is widely used for education, research and hardware development.
 
-PicoRV32
+*PicoRV32
 
 PicoRV32 is a compact RISC-V CPU core. In this learning flow, the conceptual path is RISC-V ISA → CPU implementation → RTL → synthesis → physical design.
 
@@ -209,10 +209,10 @@ RTL:It converts RTL to a crcuit out of components from the standard cell library
   - Electrical, HDL,SPICE - layout(bstrct & Detailed)
 
 * Floor and Power Planning: 
- - Chip Floor Planning : Partition the chip die between different system building blocks and place the I/O pads
-  - It decides: Chip/core dimensions,, Placement regions, Locations of major blocks, I/O locations
- - Power Floor Planning : Power pads are connected to between components Power straps and rings.
-  - Creates the power-distribution network to deliver: VDD, VSS/GND to different parts of the chip.
+  - Chip Floor Planning : Partition the chip die between different system building blocks and place the I/O pads
+    - It decides: Chip/core dimensions,, Placement regions, Locations of major blocks, I/O locations
+  - Power Floor Planning : Power pads are connected to between components Power straps and rings.
+    - Creates the power-distribution network to deliver: VDD, VSS/GND to different parts of the chip.
 
 * Placement : The synthesized standard cells are physically placed inside the chip's core area.
    - Usual done in 2 steps Global and Detailed
@@ -220,4 +220,33 @@ RTL:It converts RTL to a crcuit out of components from the standard cell library
 * Clock-Tree Synthesis : Clock Tree Synthesis creates a clock distribution network connecting the clock source to all sequential elements such as flip-flops.
    - The main objective is to minimize clock skew and ensure that the clock reaches different registers with appropriate timing.
 
-* Routing : 
+* Routing : Routing connects all the placed cells according to the netlist. Implement the interconnect using the available metal layer 
+
+   - There are generally two stages:
+     - Global routing – determines approximate routing paths.
+     - Detailed routing – creates the actual metal-layer connections.
+  
+Routing is huge.The result is a physically connected design.
+
+* Sign-off : Sign-off is the final verification stage before generating the final layout.
+   - Physical Verification
+      - Design Rule Checking (DRC)
+      - Layout vs. Schematic (LVS)
+   - Timing Verification
+      - State Timing Analysis (STA)
+GDSII
+
+After successful sign-off, the final physical layout is exported as a GDSII file.
+
+GDSII (Graphic Design System II) is a standard file format used to represent the physical layout of an integrated circuit.
+
+# Introduction to Openlane 
+
+Started as an Open-source Flow for a True Open Source Tape-out Experiment
+
+OpenLANE ASIC Flow
+
+ <img width="1920" height="1080" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/159307d7-0264-473b-873f-a96d5350fecd" />
+
+ 
+       
