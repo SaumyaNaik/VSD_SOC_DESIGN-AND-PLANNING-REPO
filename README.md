@@ -84,8 +84,8 @@ They help designers avoid designing every low-level circuit from scratch and ens
 
 # Introduction to RISC-V 
 
-<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/abe7aa6f-0d1d-4374-bfa8-1c8eb262e70d" />
 
+<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/09d218f8-846d-4e44-8bd2-95fd4a6595a0" />
 
 An Instruction Set Architecture is an abstract interface between software and processor hardware. It defines the instructions, registers, memory-access behavior and programmer-visible rules of the processor.
 The ISA allows software to be developed against a defined instruction interface while different hardware implementations can realize that same ISA.
@@ -123,8 +123,101 @@ Synthesis   :                                  	Converts RTL into a gate-level r
 
 Physical design	  :                             Places and routes the design and prepares the physical layout.
 
+Part 1: RISC-V Instruction Set Architecture((ISA)
+Part 2: RTL and synthesis of RISC-V based CPU core-picorv32a
+Part 3: Physical Design Implementation 
+
+# SoC Design and Openlane :Introduction to all sources of open source and digital asic design
+
+<img width="1920" height="1080" alt="Screenshot (81)" src="https://github.com/user-attachments/assets/25c83fcd-8a63-4bb3-b764-26b6ddeb3741" />
+
+1. EDA Tools
+
+EDA (Electronic Design Automation) tools are software tools used to design, simulate, synthesize, place, route, and verify electronic circuits such as ASICs.
+In an ASIC design flow, EDA tools automate many complex design tasks.
+
+Examples:
+
+OpenROAD – used for physical design tasks such as placement, clock tree synthesis, routing, etc.
+
+OpenLane – an automated RTL-to-GDSII ASIC design flow.
+
+Qflow – an open-source digital synthesis and physical-design flow.
+
+Role of EDA tools:
+
+EDA tools convert the RTL design into a physical chip layout by performing steps such as:
+Logic synthesis, Floorplanning, Placement, Clock Tree Synthesis, Routing, Design verification and sign-off
+
+2. RTL Designs
+
+RTL (Register Transfer Level) describes the digital circuit in terms of:
+Registers, Combinational logic, Data transfers between registers, Clocked operations
+
+RTL is generally written using hardware description languages such as:
+Verilog, SystemVerilog, VHDL
+
+Example:
+
+A Verilog description of an ALU, processor, counter, or memory controller can be considered an RTL design.
+The RTL is the starting point of the ASIC physical-design flow. It is given to synthesis tools, which convert it into a gate-level representation.
+
+Examples of open-source RTL designs:
+librecores.org, opencores.org, and repositories available on GitHub.
+
+3. PDK Data
+
+PDK (Process Design Kit) is a collection of technology-specific files and information provided for designing chips using a particular semiconductor manufacturing process. In the "age of Gods", the design of an IC was tightly integrated with the manufacturing process available within each company.
+It acts as the connection between the circuit design and the fabrication process.
+
+PDK contains information such as: Standard-cell information, Design rules, Technology files, Layer definitions, Timing information, SPICE models, Physical and electrical characteristics
+
+Example: SkyWater 130 nm PDK
+
+The lecture refers to the SkyWater 130 nm open-source PDK, which provides the technology information required to design and fabricate circuits using the 130 nm process.
+
+RTL tells us what the circuit should do, while the PDK tells the EDA tools how that circuit can be physically implemented in a particular technology.
+
+<img width="1920" height="1080" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/3fb8c04b-e4ed-416d-836b-0367428ce3ed" />
+
+Is 130 nm Fast?
+
+Yes, 130 nm technology can achieve relatively high operating frequencies, depending on the circuit architecture, standard cells, design constraints, and physical implementation.
+
+The lecture gives examples showing that 130 nm is capable of high-speed digital operation:
+
+An OSU team reported approximately 327 MHz post-layout frequency for a single-cycle RV32I CPU using the SkyWater 130 nm technology.
+
+A pipelined version can achieve more than 1 GHz according to the lecture.
+
+It also compares this with the historical Intel Pentium 4 Extreme Edition, which operated at 3.46 GHz.
 
 
+# Simplied RTL to GDSII Flow:
 
+<img width="1920" height="1080" alt="Screenshot (83)" src="https://github.com/user-attachments/assets/21b16bc3-0992-4be3-9256-09d6f96fd4c1" />
 
+RTL to GDSII is also called Automated PnR and/or Physical Implementation 
 
+* Synthesis: Synthesis converts the RTL description into a gate-level netlist using standard cells from the target technology.
+It maps operations described in RTL to physical logic gates such as:
+AND, OR, NOT, Flip-flops, Multiplexers
+
+RTL:It converts RTL to a crcuit out of components from the standard cell library(scl)
+- "Standard Cells" have regular layout
+- Each has different views/models like
+  - Electrical, HDL,SPICE - layout(bstrct & Detailed)
+
+* Floor and Power Planning: 
+ - Chip Floor Planning : Partition the chip die between different system building blocks and place the I/O pads
+  - It decides: Chip/core dimensions,, Placement regions, Locations of major blocks, I/O locations
+ - Power Floor Planning : Power pads are connected to between components Power straps and rings.
+  - Creates the power-distribution network to deliver: VDD, VSS/GND to different parts of the chip.
+
+* Placement : The synthesized standard cells are physically placed inside the chip's core area.
+   - Usual done in 2 steps Global and Detailed
+
+* Clock-Tree Synthesis : Clock Tree Synthesis creates a clock distribution network connecting the clock source to all sequential elements such as flip-flops.
+   - The main objective is to minimize clock skew and ensure that the clock reaches different registers with appropriate timing.
+
+* Routing : 
