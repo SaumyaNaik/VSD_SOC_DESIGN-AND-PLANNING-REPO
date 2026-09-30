@@ -248,5 +248,13 @@ OpenLANE ASIC Flow
 
  <img width="1920" height="1080" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/159307d7-0264-473b-873f-a96d5350fecd" />
 
- 
-       
+Main Goal : Produce a clean GDSII with no human intervention(no-human-in-the-loop)
+
+* Clean means : No LVS Violation , No DRC Violation, Timing Violation
+  Can be used to harder Macros and Chips
+   
+Two modes of operations : Autonomous or Interactive 
+
+Design Space Explaination 
+
+Large number of
