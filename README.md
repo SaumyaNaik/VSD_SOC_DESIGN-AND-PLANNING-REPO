@@ -259,3 +259,84 @@ Design Space Explaination
 
 Large number of design experiment
 
+# Design Preparation Step
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_18_09_2026_11_05_23" src="https://github.com/user-attachments/assets/7049eee4-e69f-4550-8f42-c41630224fca" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_18_09_2026_22_43_46" src="https://github.com/user-attachments/assets/bb6207f7-6108-4c7e-9b4d-429069820734" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_18_09_2026_22_44_23" src="https://github.com/user-attachments/assets/3e92dfc2-9982-49b9-aa5f-1168a8ecb20d" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_17_09_2026_12_35_38" src="https://github.com/user-attachments/assets/6297b588-d4b0-4e1a-9d13-355e1811d7eb" />
+
+
+# Day-02: Good floorplan vs bad floorplan and introduction to library cells
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_18_09_2026_22_53_33" src="https://github.com/user-attachments/assets/72c8370c-3716-4b9f-83d6-c8a5a58dd990" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_29_24" src="https://github.com/user-attachments/assets/4b2c5871-dd40-4471-875e-a1547545401c" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_07_30" src="https://github.com/user-attachments/assets/743c463a-07ea-4712-8366-3538d857a650" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_11_33" src="https://github.com/user-attachments/assets/0ee2e8d9-7568-4856-966c-f5d627707422" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_13_33" src="https://github.com/user-attachments/assets/d2b6f890-100c-49e9-b41d-92cd653866a9" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_19_58" src="https://github.com/user-attachments/assets/5b173328-a1bb-4ec5-930f-8a369ecedb70" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_24_51" src="https://github.com/user-attachments/assets/026ea567-ff01-4cf8-8a85-c8f541d48bf4" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_20_09_2026_21_26_13" src="https://github.com/user-attachments/assets/e13056c7-f4fa-44b0-bcd1-478b71d38d26" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_11_40_19" src="https://github.com/user-attachments/assets/8ee5c427-17e2-48c9-88f4-c9a8dcff5b0d" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_11_41_43" src="https://github.com/user-attachments/assets/416011c1-00d8-4552-83ba-a9352c3ca03e" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_11_46_28" src="https://github.com/user-attachments/assets/f040ef6e-e647-44e1-b165-2fc7543cb51d" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_11_47_55" src="https://github.com/user-attachments/assets/e7f02676-c893-46ab-a44f-f7c1f09b256c" />
+
+# Day-03: Design library cell using Magic Layout and ngspice characterization
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_00_18" src="https://github.com/user-attachments/assets/de98ac07-5713-4a42-839e-b0605a85450d" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_03_08" src="https://github.com/user-attachments/assets/49a31d57-2ec5-4805-9f97-758acf22767d" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_04_56" src="https://github.com/user-attachments/assets/590c86a3-ee6a-4f9b-9a53-bd48e2a47436" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_06_30" src="https://github.com/user-attachments/assets/aef5d19f-a1be-4a42-be4f-17783dc8417e" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_08_06" src="https://github.com/user-attachments/assets/b5b89f9e-f7b9-4019-ac09-b426a8b5b9e3" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_08_22" src="https://github.com/user-attachments/assets/272e71e3-8bec-4be8-8d0c-cd13933b4b53" />
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_21_09_2026_12_22_41" src="https://github.com/user-attachments/assets/8d7fb8bc-23f6-4285-a9e1-7beaa4eb7861" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_25_09_2026_22_22_41" src="https://github.com/user-attachments/assets/bb59efc7-12b9-4c0b-9e6a-4c88ca300d04" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_25_09_2026_22_37_55" src="https://github.com/user-attachments/assets/dc44a31e-3448-45ac-b64b-c32bc9f4d7b6" />
+
+
+<img width="1920" height="947" alt="VirtualBox_vsdworkshopp_25_09_2026_01_00_17" src="https://github.com/user-attachments/assets/063000e4-31f1-4f6a-9a67-81005e87207e" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_25_09_2026_22_47_17" src="https://github.com/user-attachments/assets/18ef6092-a762-4e64-bb3e-97c3d16fe394" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_25_09_2026_22_48_12" src="https://github.com/user-attachments/assets/3dba85c5-b96b-4ab8-a650-c47a31b3975d" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_25_09_2026_23_03_31" src="https://github.com/user-attachments/assets/8a79fbb4-4905-4432-b4e9-b08d400a2b4f" />
+
+
+
+
+
+
+
+
+
