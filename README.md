@@ -257,4 +257,5 @@ Two modes of operations : Autonomous or Interactive
 
 Design Space Explaination 
 
-Large number of
+Large number of design experiment
+
