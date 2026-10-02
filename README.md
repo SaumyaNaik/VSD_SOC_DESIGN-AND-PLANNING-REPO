@@ -94,7 +94,7 @@ The ISA allows software to be developed against a defined instruction interface 
 
 RISC-V is an open standard ISA based on reduced-instruction-set principles. It can be implemented in many different processor designs and is widely used for education, research and hardware development.
 
-*PicoRV32
+* PicoRV32
 
 PicoRV32 is a compact RISC-V CPU core. In this learning flow, the conceptual path is RISC-V ISA → CPU implementation → RTL → synthesis → physical design.
 
@@ -332,11 +332,41 @@ Large number of design experiment
 
 <img width="1366" height="662" alt="VirtualBox_vsdworkshopp_25_09_2026_23_03_31" src="https://github.com/user-attachments/assets/8a79fbb4-4905-4432-b4e9-b08d400a2b4f" />
 
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_05_53" src="https://github.com/user-attachments/assets/64c58e10-98c2-4c3f-94c1-f077cb428a13" />
 
 
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_06_03" src="https://github.com/user-attachments/assets/0f3d64bf-8e07-45a8-8934-527eef463f97" />
 
 
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_07_20" src="https://github.com/user-attachments/assets/a1f40acb-4ee3-4253-9354-0c8bb00dbdd5" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_07_37" src="https://github.com/user-attachments/assets/c15f99e1-9a86-421a-83cd-5e7b42ec6182" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_15_31" src="https://github.com/user-attachments/assets/15b9e274-a9a6-4e0a-8a74-be80ed4c55b1" />
 
 
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_15_52" src="https://github.com/user-attachments/assets/e3b473fc-96e9-4840-9a59-2ba3c4e85274" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_17_52" src="https://github.com/user-attachments/assets/f03bae9c-184f-4bc3-b773-96c48d7e03c5" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_18_07" src="https://github.com/user-attachments/assets/04c942cf-ccfe-43c0-beff-69a1a150c0fc" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_32_52" src="https://github.com/user-attachments/assets/b44a3e8b-ae57-4d88-bc50-3ce0f9f30a46" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_36_57" src="https://github.com/user-attachments/assets/7ea9c76d-1f11-40bb-b0d2-04ab05dd994c" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_34_35" src="https://github.com/user-attachments/assets/9480c829-b286-48f1-80c1-1f44dab9abf0" />
+
+<img width="1366" height="768" alt="Screenshot (207)" src="https://github.com/user-attachments/assets/bd5bbec4-d616-435b-93c3-e9941ca21b08" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_44_36" src="https://github.com/user-attachments/assets/05ee3480-cf32-45ca-8acd-af3ea1ff5bf0" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_55_11" src="https://github.com/user-attachments/assets/bd40cde0-fa00-4632-8384-1ed865e12efb" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_01_58_35" src="https://github.com/user-attachments/assets/fff657ec-b48d-4bee-b1a3-788b659146d6" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_02_00_12" src="https://github.com/user-attachments/assets/3cb17de8-6ad2-43a3-8873-3c956acb6d20" />
+
+<img width="1366" height="662" alt="VirtualBox_vsdworkshopp_26_09_2026_02_02_31" src="https://github.com/user-attachments/assets/d233769e-ad1e-4ec6-889b-318a4b26c34b" />
 
 
